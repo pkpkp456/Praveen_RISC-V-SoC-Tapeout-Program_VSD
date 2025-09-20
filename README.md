@@ -42,15 +42,16 @@ To follow along, ensure you have:
 
 ## 🛠 Tools Installation  
 
-### Resizing the Ubuntu Window to Fit Screen  
+
 ```bash
+### 🔹 Resizing the Ubuntu Window to Fit Screen  
 sudo apt update
 sudo apt install build-essential dkms linux-headers-$(uname -r)
 cd /media/<your-username>/VBox_GAs_7.1.8/
 ./autorun.sh
 
-
-### Yosys (Open Source Synthesis Suite)
+### 🔹 Yosys (Open Source Synthesis Suite)  
+```bash
 sudo apt-get update
 git clone https://github.com/YosysHQ/yosys.git
 cd yosys
@@ -70,39 +71,10 @@ git submodule update --init --recursive
 make 
 sudo make install
 
-Icarus Verilog (Iverilog)
-
+### 🔹 Icarus Verilog (Iverilog)  
+```bash
 sudo apt-get update
 sudo apt-get install iverilog
-
-GTKWave (Waveform Viewer)
-
 sudo apt-get update
 sudo apt install gtkwave
 
-
-🎯 Learning Objectives
-
-By the end of this program, I aim to:
-
-Understand RISC-V ISA fundamentals
-
-Gain hands-on experience in RTL design and SoC integration
-
-Perform functional verification with open-source tools
-
-Synthesize designs using Yosys and simulate with Icarus Verilog
-
-Prepare designs for tapeout flow
-
-📂 Repository Contents
-
-Labs/ → Hands-on lab exercises
-
-RTL/ → RTL design files
-
-Scripts/ → Automation and helper scripts
-
-Docs/ → Notes and reference documents
-
-Images/ → Screenshots and installation proofs
